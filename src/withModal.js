@@ -15,7 +15,13 @@ export const withModal = (
         return context.showModal(modalType, modalProps);
       };
     } else {
-      callback = context.showModal.bind(null, modalType);
+      callback = event => {
+        if (event.persist) {
+          event.persist();
+        }
+
+        context.showModal(modalType, event);
+      };
     }
 
     return React.createElement(

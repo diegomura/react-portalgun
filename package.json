@@ -5,5 +5,19 @@
   "main": "index.js",
   "repository": "https://github.com/diegomura/modly",
   "author": "Diego Muracciole <diegomuracciole@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.10.2"
+  }
 }

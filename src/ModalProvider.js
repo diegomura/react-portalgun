@@ -25,16 +25,19 @@ export class ModalProvider extends React.Component {
 
   render() {
     const { modals } = this.props;
-    const { modalType } = this.state;
+    const { modalType, modalProps } = this.state;
     const ModalComponent = modals[modalType];
 
     return React.createElement(
       'div',
       null,
       ModalComponent &&
-        React.createElement(ModalComponent, {
-          onClose: this.closeModal.bind(this),
-        }),
+        React.createElement(
+          ModalComponent,
+          Object.assign({}, modalProps, {
+            onClose: this.closeModal.bind(this),
+          }),
+        ),
       this.props.children,
     );
   }

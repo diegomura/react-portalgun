@@ -1,11 +1,11 @@
-# Example app utilizing Modly with [react-modal](https://github.com/reactjs/react-modal)
+# Example app utilizing portalgun with [react-modal](https://github.com/reactjs/react-modal)
 
 ## How to use
-First [clone the repo](https://github.com/diegomura/modly.js):
+First [clone the repo](https://github.com/diegomura/portalgun.js):
 
 ```bash
-git clone https://github.com/diegomura/modly.git
-cd modly/examples/using-react-modal
+git clone https://github.com/diegomura/portalgun.git
+cd portalgun/examples/using-react-modal
 ```
 
 Install dependencies and run it:
@@ -16,4 +16,4 @@ npm run start
 ```
 
 ## Idea behind the example
-- Show how easy is to integrate Modly with the popular react-modal
+- Show how easy is to integrate portalgun with the popular react-modal

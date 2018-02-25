@@ -1,9 +1,9 @@
 {
-  "name": "modly",
+  "name": "portalgun",
   "version": "0.0.1",
   "description": "React modals made easy",
   "main": "src/index.js",
-  "repository": "https://github.com/diegomura/modly",
+  "repository": "https://github.com/diegomura/portalgun",
   "author": "Diego Muracciole <diegomuracciole@gmail.com>",
   "license": "MIT",
   "files": [

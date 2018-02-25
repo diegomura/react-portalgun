@@ -2,26 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import warning from 'warning';
 
-export const withModal = (
-  modalType,
+export const withPortal = (
+  portalType,
   callbackName,
-  mapModalProps,
+  mapPropsToPortal,
 ) => WrappedComponent => {
   const Wrapper = (props, context) => {
     let callback;
 
-    if (!context.showModal) {
+    if (!context.showPortal) {
       warning(
         false,
-        'Error: Modly. Wrap your application in a <ModalProvider />',
+        'Error: portalgun. Wrap your application in a <PortalProvider />',
       );
       return React.createElement(WrappedComponent, props);
     }
 
-    if (mapModalProps) {
+    if (mapPropsToPortal) {
       callback = event => {
-        const modalProps = mapModalProps({ event, ownProps: props });
-        return context.showModal(modalType, modalProps);
+        const portalProps = mapPropsToPortal({ event, ownProps: props });
+        return context.showPortal(portalType, portalProps);
       };
     } else {
       callback = event => {
@@ -29,18 +29,18 @@ export const withModal = (
           event.persist();
         }
 
-        context.showModal(modalType, event);
+        context.showPortal(portalType, event);
       };
     }
 
     return React.createElement(
       WrappedComponent,
-      Object.assign({}, props, { [callbackName || 'showModal']: callback }),
+      Object.assign({}, props, { [callbackName || 'showPortal']: callback }),
     );
   };
 
   Wrapper.contextTypes = {
-    showModal: PropTypes.func,
+    showPortal: PropTypes.func,
   };
 
   return Wrapper;

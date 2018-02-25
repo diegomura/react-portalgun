@@ -1,2 +1,2 @@
-export * from './withModal';
-export * from './ModalProvider';
+export * from './withPortal';
+export * from './PortalProvider';

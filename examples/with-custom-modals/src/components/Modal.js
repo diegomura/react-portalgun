@@ -5,7 +5,7 @@ export default ({ onClose }) => (
     <div className="overlay" onClick={onClose} />
     <div className="content">
       <h1>Hello</h1>
-      <div>I am a custom modal using Modly</div>
+      <div>I am a custom modal using portalgun</div>
       <span>You can close me by clicking on the overlay, or in</span>
       <button onClick={onClose}>here</button>
     </div>

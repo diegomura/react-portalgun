@@ -1,12 +1,12 @@
 import React from 'react';
 import Button from './Button';
 import Alert from './Alert';
-import { ModalProvider } from '../../../../src';
+import { PortalProvider } from '../../../../src';
 
-const MODAL_COMPONENTS = { ALERT: Alert };
+const PORTAL_COMPONENTS = { ALERT: Alert };
 
 const App = () => (
-  <ModalProvider modals={MODAL_COMPONENTS}>
+  <PortalProvider portals={PORTAL_COMPONENTS}>
     <Button title="Parmenides" message="Thinking and being is the same thing">
       Parmenides
     </Button>
@@ -16,7 +16,7 @@ const App = () => (
     >
       Aristotle
     </Button>
-  </ModalProvider>
+  </PortalProvider>
 );
 
 export default App;

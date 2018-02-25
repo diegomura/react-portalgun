@@ -22,7 +22,7 @@ export default ({ onClose }) => (
     isOpen
   >
     <h1>Hello</h1>
-    <div>I am a modal using Modly and react-modal</div>
+    <div>I am a modal using portalgun and react-modal</div>
     <span>You can close me by clicking on the overlay, or in</span>
     <button onClick={onClose}>here</button>
   </Modal>

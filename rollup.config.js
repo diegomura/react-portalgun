@@ -13,13 +13,13 @@ const shared = {
 export default [
   Object.assign({}, shared, {
     output: {
-      name: 'Modly',
+      name: 'portalgun',
       format: 'umd',
       sourcemap: true,
       file:
         process.env.NODE_ENV === 'production'
-          ? './dist/modly.umd.min.js'
-          : './dist/modly.umd.js',
+          ? './dist/portalgun.umd.min.js'
+          : './dist/portalgun.umd.js',
       exports: 'named',
       globals: { react: 'React' }
     },
@@ -55,14 +55,14 @@ export default [
   Object.assign({}, shared, {
     output: [
       {
-        file: 'dist/modly.es6.js',
+        file: 'dist/portalgun.es6.js',
         format: 'es',
         sourcemap: true,
         exports: 'named',
         globals: { react: 'React' }
       },
       {
-        file: 'dist/modly.js',
+        file: 'dist/portalgun.js',
         format: 'cjs',
         sourcemap: true,
         exports: 'named',

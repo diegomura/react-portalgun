@@ -1,16 +1,16 @@
 import React from 'react';
 import Button from './Button';
 import Modal from './Modal';
-import { ModalProvider } from '../../../../src';
+import { PortalProvider } from '../../../../src';
 
-const MODAL_COMPONENTS = {
+const PORTAL_COMPONENTS = {
   TEST_MODAL: Modal,
 };
 
 const App = () => (
-  <ModalProvider modals={MODAL_COMPONENTS}>
+  <PortalProvider portals={PORTAL_COMPONENTS}>
     <Button>Click me to open modal</Button>
-  </ModalProvider>
+  </PortalProvider>
 );
 
 export default App;

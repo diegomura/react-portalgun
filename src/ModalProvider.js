@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export class ModalProvider extends React.PureComponent {
+export class ModalProvider extends React.Component {
   constructor(props) {
     super(props);
 

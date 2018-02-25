@@ -4,6 +4,7 @@ import replace from 'rollup-plugin-replace';
 import resolve from 'rollup-plugin-node-resolve';
 import sourceMaps from 'rollup-plugin-sourcemaps';
 import uglify from 'rollup-plugin-uglify';
+import { minify } from 'uglify-es';
 
 const shared = {
   input: `src/index.js`,
@@ -33,21 +34,15 @@ export default [
         ),
       }),
       commonjs({
-        include: /node_modules/
+        include: /node_modules/,
+        namedExports: {
+          'node_modules/prop-types/index.js': ['func'],
+        },
       }),
       sourceMaps(),
       process.env.NODE_ENV === 'production' && filesize(),
       process.env.NODE_ENV === 'production' && (
-        uglify({
-          output: { comments: false },
-          compress: {
-            keep_infinity: true,
-            pure_getters: true
-          },
-          warnings: true,
-          ecma: 5,
-          toplevel: false
-        })
+        uglify({}, minify)
       )
     ]
   }),
@@ -72,7 +67,10 @@ export default [
     plugins: [
       resolve(),
       commonjs({
-        include: /node_modules/
+        include: /node_modules/,
+        namedExports: {
+          'node_modules/prop-types/index.js': ['func'],
+        },
       }),
       sourceMaps()
     ],

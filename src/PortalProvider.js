@@ -30,11 +30,7 @@ export class PortalProvider extends React.Component {
     const PortalComponent = portals[portalType];
 
     warning(
-      !(
-        process.env.NODE_ENV !== 'production' &&
-        portalType &&
-        !PortalComponent
-      ),
+      !(portalType && !PortalComponent),
       `Warning: portalgun. ${portalType} is not a valid element`,
     );
 

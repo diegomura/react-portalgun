@@ -25,7 +25,7 @@ This component should be defined only once in your application, in the part of t
 
 ```jsx
 import React from 'react';
-import { PortalProvider } from 'portalgun';
+import { PortalProvider } from 'react-portalgun';
 import Modal from './Modal';
 
 const PORTAL_COMPONENTS = {

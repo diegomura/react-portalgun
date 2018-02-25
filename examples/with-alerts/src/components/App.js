@@ -8,13 +8,13 @@ const MODAL_COMPONENTS = { ALERT: Alert };
 const App = () => (
   <ModalProvider modals={MODAL_COMPONENTS}>
     <Button title="Parmenides" message="Thinking and being is the same thing">
-      Click me
+      Parmenides
     </Button>
     <Button
       title="Aristotle"
       message="The whole is greater than the sum of its parts"
     >
-      Click me
+      Aristotle
     </Button>
   </ModalProvider>
 );

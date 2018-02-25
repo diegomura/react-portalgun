@@ -38,5 +38,7 @@
   "peerDependencies": {
     "react": "^16.2.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "warning": "^3.0.0"
+  }
 }

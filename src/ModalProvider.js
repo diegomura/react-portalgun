@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import warning from 'warning';
 
 export class ModalProvider extends React.Component {
   constructor(props) {
@@ -27,6 +28,11 @@ export class ModalProvider extends React.Component {
     const { modals } = this.props;
     const { modalType, modalProps } = this.state;
     const ModalComponent = modals[modalType];
+
+    warning(
+      !(process.env.NODE_ENV !== 'production' && modalType && !ModalComponent),
+      `Warning: Modly. ${modalType} is not a valid element`,
+    );
 
     return React.createElement(
       'div',

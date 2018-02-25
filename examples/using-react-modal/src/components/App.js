@@ -9,7 +9,7 @@ const MODAL_COMPONENTS = {
 
 const App = () => (
   <ModalProvider modals={MODAL_COMPONENTS}>
-    <Button>Click me</Button>
+    <Button>Click me to open modal</Button>
   </ModalProvider>
 );
 

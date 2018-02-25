@@ -1,12 +1,15 @@
 # portalgun
 React modals made easy
+[![gzip size](http://img.badgesize.io/https://unpkg.com/react-portalgun/dist/portalgun.umd.min.js?compression=gzip)](https://unpkg.com/react-portalgun/dist/portalgun.umd.min.js)
+[![npm](https://img.shields.io/npm/v/react-portalgun.svg)](https://npm.im/react-portalgun)
+[![license](https://img.shields.io/npm/l/react-portalgun.svg)](./LICENSE)
 
 ## Installation
 Add portalgun to your project
 ```sh
-npm i portalgun --save
+npm i react-portalgun --save
 #or
-yarn add portalgun
+yarn add react-portalgun
 ```
 
 ## Demos

@@ -3,6 +3,7 @@
 
 [![gzip size](http://img.badgesize.io/https://unpkg.com/react-portalgun/dist/react-portalgun.umd.min.js?compression=gzip)](https://unpkg.com/react-portalgun/dist/react-portalgun.umd.min.js)
 [![npm](https://img.shields.io/npm/v/react-portalgun.svg)](https://npm.im/react-portalgun)
+[![Travis](https://img.shields.io/travis/diegomura/react-portalgun.svg)](https://travis-ci.org/diegomura/react-portalgun)
 [![license](https://img.shields.io/npm/l/react-portalgun.svg)](./LICENSE)
 
 ## Why

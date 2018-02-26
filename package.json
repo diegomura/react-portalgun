@@ -1,6 +1,6 @@
 {
   "name": "react-portalgun",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "React modals made easy",
   "main": "dist/react-portalgun.js",
   "module": "dist/react-portalgun.es6.js",

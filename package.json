@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "React modals made easy",
   "main": "src/index.js",
-  "repository": "https://github.com/diegomura/portalgun",
+  "repository": "https://github.com/diegomura/react-portalgun",
   "author": "Diego Muracciole <diegomuracciole@gmail.com>",
   "license": "MIT",
   "files": [

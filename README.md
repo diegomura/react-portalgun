@@ -1,5 +1,6 @@
-# portalgun
-React modals made easy
+<div align="center"><img src="https://user-images.githubusercontent.com/5600341/36648717-c4e8c8ce-1a75-11e8-8348-742e0c7b1a21.png" height="400px"></div>
+<big><h1 align="center">react-portalgun</h1></big>
+
 [![gzip size](http://img.badgesize.io/https://unpkg.com/react-portalgun/dist/portalgun.umd.min.js?compression=gzip)](https://unpkg.com/react-portalgun/dist/portalgun.umd.min.js)
 [![npm](https://img.shields.io/npm/v/react-portalgun.svg)](https://npm.im/react-portalgun)
 [![license](https://img.shields.io/npm/l/react-portalgun.svg)](./LICENSE)

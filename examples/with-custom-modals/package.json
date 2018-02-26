@@ -1,7 +1,7 @@
 {
-  "name": "using-react-modal",
+  "name": "with-custom-modals",
   "version": "0.0.1",
-  "description": "Show how easy is to integrate portalgun with the popular react-modal",
+  "description": "Show how easy is to integrate portalgun with custom modal implementations",
   "main": "src/index.js",
   "author": "Diego Muracciole <diegomuracciole@gmail.com>",
   "license": "MIT",

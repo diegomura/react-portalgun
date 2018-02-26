@@ -2,7 +2,8 @@
   "name": "react-portalgun",
   "version": "0.0.1",
   "description": "React modals made easy",
-  "main": "src/index.js",
+  "main": "dist/react-portalgun.js",
+  "module": "dist/react-portalgun.es6.js",
   "repository": "https://github.com/diegomura/react-portalgun",
   "author": "Diego Muracciole <diegomuracciole@gmail.com>",
   "license": "MIT",
@@ -27,7 +28,6 @@
     "husky": "^0.14.3",
     "lint-staged": "^7.0.0",
     "prettier": "^1.10.2",
-    "react": "^16.2.0",
     "rollup": "^0.55.3",
     "rollup-plugin-commonjs": "8.1.0",
     "rollup-plugin-filesize": "1.4.2",
@@ -38,8 +38,8 @@
     "uglify-es": "^3.3.9"
   },
   "peerDependencies": {
-    "react": "^16.2.0",
-    "prop-types": "^15.6.0"
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0"
   },
   "dependencies": {
     "warning": "^3.0.0"

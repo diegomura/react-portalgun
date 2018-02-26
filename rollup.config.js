@@ -14,13 +14,13 @@ const shared = {
 export default [
   Object.assign({}, shared, {
     output: {
-      name: 'portalgun',
+      name: 'react-portalgun',
       format: 'umd',
       sourcemap: true,
       file:
         process.env.NODE_ENV === 'production'
-          ? './dist/portalgun.umd.min.js'
-          : './dist/portalgun.umd.js',
+          ? './dist/react-portalgun.umd.min.js'
+          : './dist/react-portalgun.umd.js',
       exports: 'named',
       globals: { react: 'React' }
     },
@@ -50,14 +50,14 @@ export default [
   Object.assign({}, shared, {
     output: [
       {
-        file: 'dist/portalgun.es6.js',
+        file: 'dist/react-portalgun.es6.js',
         format: 'es',
         sourcemap: true,
         exports: 'named',
         globals: { react: 'React' }
       },
       {
-        file: 'dist/portalgun.js',
+        file: 'dist/react-portalgun.js',
         format: 'cjs',
         sourcemap: true,
         exports: 'named',

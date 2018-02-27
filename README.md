@@ -94,7 +94,7 @@ Portals definitions. Must be a valid JS object that contains each possible compo
 
 Automatically, each portal will then recieve an `onClose` function that can call to close itself. For more details please refer to the examples section.
 
-### `withModal(modalType, [actionName], [mapPropsToPortal])`
+### `withPortal(modalType, [actionName], [mapPropsToPortal])`
 
 ```jsx
 import { withPortal } from 'react-portalgun';;
@@ -114,7 +114,7 @@ export default withPortal('TEST_MODAL', 'onItemClick')(Button);
 
 Higher order component to bind a component with a particular portal. This HOC will inject a callback function that the component can use to open the portal. This callback recieves an object as first parameter, which will be destructured and passed down as props to the portal (in the snippet above, the modal will recieve the destructured `item`).
 
-#### withModal props
+#### withPortal props
 **`portalName: string`** _required_
 
 Name of the portal yo want to bind to the component. Must match any of the portals defined on the `PortalProvider`
